@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="theme-color" content="#71BA51">
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="images/NoahIcon.ico">-->
+  <script src="js/main.js"></script>
+
+  <!-- <link href="css/style.css" rel="stylesheet"/>-->
+
+  <title>Noah Picard | Software Developer</title>
+
+</head>
+
+<body style='background: #333;'>
+<canvas onmousemove="mouseMove(event)" onclick="mouseClick()" id="myCanvas" width="1000px" height="1000px"></canvas>
+<button onclick="stopSyncTimer('step100'); stopSyncTimer('step10'); stopSyncTimer('step1');">Stop</button>
+<button onclick="step()">1 Step</button>
+<button onclick="startSyncTimer('step100', step, 100); stopSyncTimer('step10'); stopSyncTimer('step1');">Start 1</button>
+<button onclick="startSyncTimer('step10', step, 10); stopSyncTimer('step100'); stopSyncTimer('step1');">Start 10</button>
+<button onclick="startSyncTimer('step1', step, 1); stopSyncTimer('step10'); stopSyncTimer('step100');">Start 100</button>
+
+</body>
+</html>
